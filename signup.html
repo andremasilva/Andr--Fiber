@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fiber Sign Up</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/sign-up.css" />
+  </head>
+  <body>
+    <div class="whole-page-grid">
+      <div class="bg-white">
+        <div class="container">
+          <span class="fiber-logo">Fiber</span>
+          <h1 class="form-title">Create your Fiber account</h1>
+
+          <form action="GET" class="form">
+            <div class="input-wrap">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                class="form-input"
+              />
+            </div>
+
+            <div class="input-wrap">
+              <label for="email" class="form-label">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="andre@example.com"
+                class="form-input"
+              />
+            </div>
+
+            <div class="input-wrap">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="At least 8 characters"
+                minlength="8"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="input-wrap checkbox-wrap">
+              <label for="checkbox" class="checkbox-label-wrap">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  id="checkbox"
+                  class="actual-checkbox"
+                />
+                <span class="custom-checkbox"></span>
+                <label for="checkbox" class="terms-label"
+                  >By creating an account on Fiber, you agree to the
+                  <a href="#" class="terms-link">Terms & Conditions</a></label
+                >
+              </label>
+            </div>
+
+            <div class="button-wrap input-wrap">
+              <button type="submit" class="purple-btn">
+                Create Fiber Account
+              </button>
+              <span class="sign-in"
+                >Already have an account?
+                <a href="#" class="sign-in-link">Sign in</a></span
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="bg-primary">
+        <div class="container">
+          <img
+            src="./Assets/Page Image.png"
+            alt="page-image"
+            class="slider-img"
+          />
+          <div class="slider-wrap">
+            <h2 class="slider-title">Unparalleled Templates</h2>
+            <p class="slider-p">
+              Crafted by a team of professional designers, our templates are
+              eunparalleled in the market.
+            </p>
+            <div class="slider-btns">
+              <button class="slide-btn slide-btn-active"></button>
+              <button class="slide-btn"></button>
+              <button class="slide-btn"></button>
+              <button class="slide-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
